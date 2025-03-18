@@ -53,12 +53,11 @@ if (isset($_GET['id'])) {
                 </ul>
             </div>
             
-            <p>We appreciate your time and consideration.</p>
+ 
             
             <div class="signature mt-4">
                 <p>Sincerely,</p>
-                <p><strong>Iresh Wickramasinghe</strong></p>
-                <p>Infive Pvt Ltd</p>
+                <p class="mb-0"><strong>{$data['recipient_name']}</strong></p>
             </div>
         </div>
 HTML;
