@@ -23,15 +23,6 @@ if (isset($_GET['id'])) {
 
         echo <<<HTML
         <div class="mb-4">
-            <h4>Iresh Wickramasinghe</h4>
-            <p class="mb-0">Infive Pvt Ltd</p>
-            <p class="mb-0">2nd Floor, 206A Wilgoda Estate Rd</p>
-            <p class="mb-0">Kurunegala</p>
-            <p class="text-muted">Date: {date('d/m/Y')}</p>
-        </div>
-
-        <div class="mb-4">
-            <h5>To:</h5>
             <p class="mb-0"><strong>{$data['recipient_name']}</strong></p>
             <p class="mb-0">{$data['organization']}</p>
             <p class="mb-0">{$data['address1']}</p>
@@ -39,13 +30,20 @@ if (isset($_GET['id'])) {
             <p class="mb-0">{$data['address3']}</p>
         </div>
 
+        <div class="mb-4">
+            <h6>Manager</h6>
+            <p class="mb-0">Infive Pvt Ltd</p>
+            <p class="mb-0">2nd Floor, 206A Wilgoda Estate Rd</p>
+            <p class="mb-0">Kurunegala</p>
+        </div>
+
         <h4 class="mb-3 text-primary">Request for Permission to Print Identity Cards with the State Emblem</h4>
 
         <div class="letter-body">
             <p>Dear Sir/Madam,</p>
-            <p>I am writing on behalf of Infive Pvt Ltd to formally request permission to print identity cards featuring the Sri Lanka State Emblem for <strong>{$data['business_name']}</strong>.</p>
+            <p>I would like to formally authorize Infive Pvt Ltd to print identity cards bearing the Sri Lankan government logo for the <strong>{$data['business_name']}</strong>.</p>
             
-            <p>In order to proceed with this printing, we require your authorization to use the State Emblem on the identity cards that will be issued for your organization's official purposes. We kindly request your guidance and approval for this process.</p>
+            <p>To proceed with this printing, I give my consent to use the state emblem on identity cards issued for official purposes by my organization and to continue this process under my guidance.</p>
             
             <div class="contact-info mt-4">
                 <h6>Contact Information:</h6>
