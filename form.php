@@ -1,6 +1,55 @@
 <?php include 'header.php'; ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permission Request Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Style for the logo */
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 200px; /* Adjust the width as needed */
+        }
+
+        /* Style for the submit button */
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the text fields */
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            padding: 10px;
+            font-size: 14px;
+            transition: border-color 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+    </style>
+</head>
+<body>
+
 <div class="container">
+    <!-- Logo -->
+    <img src="logo-infive.png" alt="Infive Logo" class="logo">
+
     <div class="form-header">
         <h2>📄 Permission Request Form</h2>
         <p class="text-muted">Fill in the details to generate official request letter</p>
@@ -62,3 +111,6 @@
         </div>
     </form>
 </div>
+
+</body>
+</html>
