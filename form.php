@@ -8,14 +8,6 @@
     <title>Permission Request Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Style for the logo */
-        .logo {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 200px; /* Adjust the width as needed */
-        }
-
         /* Style for the submit button */
         .btn-custom {
             background-color: #007bff;
@@ -46,10 +38,27 @@
 </head>
 <body>
 
-<div class="container">
-    <!-- Logo -->
-    <img src="logo-infive.png" alt="Infive Logo" class="logo">
+<!-- Top Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="logo-infive.png" alt="Infive Logo" width="150" height="30" class="d-inline-block align-top">
+        </a>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                
+            </ul>
+        </div>
+    </div>
+</nav>
 
+<div class="container mt-5">
     <div class="form-header">
         <h2>📄 Permission Request Form</h2>
         <p class="text-muted">Fill in the details to generate official request letter</p>
@@ -112,5 +121,7 @@
     </form>
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
