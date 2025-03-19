@@ -160,7 +160,7 @@
         }
 
         const previewContent = `
-            <p>Dear ${recipientName},</p>
+            <p>Dear Sir/Madam,</p>
             
             <p>I would like to formally authorize <strong>Infive Pvt Ltd</strong> to print identity cards bearing the Sri Lankan government logo for <strong>${businessName}</strong>.</p>
             <p>To proceed with this printing, I give my consent to use the state emblem on identity cards issued for official purposes by my organization and to continue this process under my guidance.</p>
