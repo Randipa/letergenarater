@@ -92,7 +92,7 @@ $result = $conn->query($sql);
                     <th>Recipient Name</th>
                     <th>Organization</th>
                     <th>Business Name</th>
-                    <th>Created At</th>
+                  
                     <th>Action</th>
                 </tr>
             </thead>
@@ -104,7 +104,7 @@ $result = $conn->query($sql);
                             <td><?= htmlspecialchars($row['recipient_name']) ?></td>
                             <td><?= htmlspecialchars($row['organization']) ?></td>
                             <td><?= htmlspecialchars($row['business_name']) ?></td>
-                            <td><?= htmlspecialchars($row['created_at']) ?></td>
+                         
                             <td>
                                 <a href="<?= htmlspecialchars($row['letter_url']) ?>" class="btn btn-primary btn-sm">View Letter</a>
                             </td>
