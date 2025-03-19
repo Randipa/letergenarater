@@ -53,11 +53,10 @@ if (isset($_GET['id'])) {
                 </ul>
             </div>
             
- 
-            
             <div class="signature mt-4">
                 <p>Sincerely,</p>
                 <p class="mb-0"><strong>{$data['recipient_name']}</strong></p>
+                <p class="mb-0">{$data['nic_number']}</p> <!-- Display NIC Number -->
             </div>
         </div>
 HTML;

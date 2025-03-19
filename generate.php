@@ -6,6 +6,7 @@ include 'db_connect.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve form data
     $recipient_name = $_POST['recipient_name'];
+    $nic_number = $_POST['nic_number'];
     $organization = $_POST['organization'];
     $address1 = $_POST['address1'];
     $address2 = isset($_POST['address2']) ? $_POST['address2'] : '';
@@ -18,9 +19,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $unique_id = uniqid();
 
     // Insert data into the database
-    $stmt = $conn->prepare("INSERT INTO letters (recipient_name, organization, address1, address2, address3, business_name, phone, email, letter_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO letters (recipient_name, nic_number, organization, address1, address2, address3, business_name, phone, email, letter_url) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
     $letter_url = "view_letter.php?id=" . $unique_id;
-    $stmt->bind_param("sssssssss", $recipient_name, $organization, $address1, $address2, $address3, $business_name, $phone, $email, $letter_url);
+
+    // Corrected bind_param to include all 10 variables
+    $stmt->bind_param("ssssssssss", $recipient_name, $nic_number, $organization, $address1, $address2, $address3, $business_name, $phone, $email, $letter_url);
 
     if ($stmt->execute()) {
         // Redirect to the generated letter page
